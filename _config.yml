@@ -13,8 +13,8 @@ timezone: Asia/Taipei
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://fyc970823.github.io/transmit
-root: /transmit/
+url: https://fyc970823.github.io/main
+root: /main/
 permalink: :title/
 permalink_defaults:
 pretty_urls:
@@ -105,7 +105,7 @@ theme: redefine
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/fyc970823/transmit.git
+  repo: https://github.com/fyc970823/main.git
   branch: main
 mathjax:
   tags: none # or 'ams' or 'all'
