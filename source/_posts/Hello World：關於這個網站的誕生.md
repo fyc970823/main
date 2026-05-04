@@ -27,7 +27,7 @@ excerpt: 我第一個個網已出現在世界中...
 我使用了兩個主題，一個是單純只有封面，也就是一開始點進去的封面[kuri](https://github.com/fly6022/hexo-theme-kuri)和主要的主題[redefine](https://github.com/EvanNotFound/hexo-theme-redefine)，有興趣可以點擊本段其主題名稱查詢。
 
 # 網站使用說明
-欲前往網站使用說明教學，請點選[本網站使用說明文字](https://fyc970823.github.io/transmit/本站使用說明/)或前往首頁、歸檔、分類或標籤查詢。
+欲前往網站使用說明教學，請點選[本網站使用說明文字](https://fyc970823.github.io/main/本站使用說明/)或前往首頁、歸檔、分類或標籤查詢。
 
 # 結語
 ## 再次歡迎你來參觀本個網，祝你逛得開心~(￣▽￣)*
