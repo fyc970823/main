@@ -11,13 +11,13 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Theme Redefine
+  title: 制霸蛋餅統天下
   # Site subtitle
-  subtitle: Redefine Your Hexo Journey.
+  subtitle: fyc970823
   # Author name
-  author: The Redefine Team
+  author: fyc970823
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://fyc970823.github.io/transmit/
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -25,11 +25,11 @@ info:
 # Docs: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # Favicon
-  favicon: /images/redefine-favicon.svg
+  favicon: https://i.postimg.cc/JhDHk0tC/頭貼.jpg #/images/redefine-favicon.svg
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: https://i.postimg.cc/Zqc0GN9T/頭貼.jpg #/images/redefine-avatar.svg
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -100,7 +100,7 @@ global:
   open_graph:
     enable: true
     image: /images/redefine-og.webp  # default og:image
-    description: Hexo Theme Redefine, Redefine Your Hexo Journey.
+    description: 來看我網站!
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
@@ -131,13 +131,13 @@ home_banner:
   style: fixed # static or fixed
   # Home banner image
   image: 
-    light: /images/wallhaven-wqery6-light.webp # light mode
-    dark: /images/wallhaven-wqery6-dark.webp # dark mode
+    light: /images/lightbackground.png # light mode
+    dark: /images/darkbackground.png # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: 往蝦滑看更多
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["我是蛋餅","眾所周知"] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
@@ -171,17 +171,17 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: true
     # Social links style
     style: default # default, reverse, center
     # Social links
     links:
       - icon: github # can also be "fa-brands fa-github"
-        url:
+        url: https://github.com/fyc970823
       - icon: twitter
         url:
       - icon: email
-        url: you@example.com
+        url: fyc970823@gmail.com
       - icon: telegram
         url:
       - icon: /images/custom-icon.svg
@@ -214,20 +214,33 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
-    # Status: 
-    #   path: https://status.ohevan.com/
-    #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
-    #     Friends: /friends
-    # Links: 
+    Archives: 
+      path: /archives 
+      icon: fa-regular fa-archive # can be empty
+    Categories: 
+      path: /categories 
+      icon: fa-regular fa-folder
+    Tags: 
+      path: /tags 
+      icon: fa-regular fa-tags
+    #Status: 
+    #  path: https://status.ohevan.com/
+    #  icon: fa-regular fa-chart-bar
+    About: 
+      icon: fa-regular fa-user
+      submenus:
+        Me: /about
+        Github: https://github.com/fyc970823
+        Steam: https://steamcommunity.com/profiles/76561199545001325
+        #Blog: https://ohevan.com
+        #Friends: /friends
+    Links: 
+      path: /links 
+      icon: fa-regular fa-link
+
+
+
+
     #   icon: fa-regular fa-link
     #   submenus:
     #     Link1: /link1
@@ -254,15 +267,15 @@ home:
     announcement: # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
-      # Tags: 
-      #   path: /tags 
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories: 
-      #   path: /categories 
-      #   icon: fa-regular fa-folder # can be empty
+    #  Archives: 
+    #    path: /archives 
+    #    icon: fa-regular fa-archive # can be empty
+    #  Tags: 
+    #    path: /tags 
+    #    icon: fa-regular fa-tags # can be empty
+    #  Categories: 
+    #    path: /categories 
+    #    icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -290,7 +303,7 @@ articles:
     image_alignment: center # image alignment. left, center
     image_caption: false # Whether to display image caption
     link_icon: true # Whether to display link icon
-    delete_mask: false # Add mask effect to <del> tags, hiding content by default and revealing on hover
+    delete_mask: true # Add mask effect to <del> tags, hiding content by default and revealing on hover
     title_alignment: left # Title alignment. left, center
     headings_top_spacing: # Top spacing for headings from h1-h6
       h1: 3.2rem
@@ -340,7 +353,7 @@ articles:
     # Whether to enable article recommendation
     enable: false
     # Article recommendation title
-    title: 推荐阅读
+    title: 推薦閱讀
     # Max number of articles to display
     limit: 3
     # Max number of articles to display mobile
@@ -350,65 +363,6 @@ articles:
     # Skip directory
     skip_dirs: []
 # ARTICLE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-
-
-# COMMENT >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
-# Docs: https://redefine-docs.ohevan.com/posts/comment
-comment:
-  # Whether to enable comment
-  enable: true
-  # Comment system
-  system: waline # waline, gitalk, twikoo, giscus, utterances, artalk
-  # System configuration
-  config:
-    # Waline comment system. See https://waline.js.org/
-    waline:
-      serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
-      lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
-      emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
-      recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
-      turnstileKey: # Turnstile key. See https://waline.js.org/reference/client/props.html#turnstilekey
-      reaction: false # Waline reaction. See https://waline.js.org/reference/client/props.html#reaction
-    # Gitalk comment system. See https://github.com/gitalk/gitalk
-    gitalk:
-      clientID: # GitHub Application Client ID
-      clientSecret: # GitHub Application Client Secret
-      repo: # GitHub repository
-      owner: # GitHub repository owner
-      proxy: # GitHub repository proxy
-    # Twikoo comment system. See https://twikoo.js.org/
-    twikoo:
-      version: 1.6.10 # Twikoo version, do not modify if you dont know what it is
-      server_url: # Twikoo server URL. e.g. https://example.example.com
-      region: # Twikoo region. can be empty
-    # Giscus comment system. See https://giscus.app/
-    giscus:
-      repo: # Github repository name e.g. EvanNotFound/hexo-theme-redefine
-      repo_id: # Github repository id
-      category: # Github discussion category
-      category_id: # Github discussion category id
-      mapping: pathname # Which value to use as the unique identifier for the page. e.g. pathname, url, title, og:title. DO NOT USE og:title WITH PJAX ENABLED since pjax will not update og:title when the page changes
-      strict: 0 # Whether to enable strict mode. e.g. 0, 1
-      reactions_enabled: 1 # Whether to enable reactions. e.g. 0, 1
-      emit_metadata: 0 # Whether to emit metadata. e.g. 0, 1
-      lang: en # Giscus language. e.g. en, zh-CN, zh-TW
-      input_position: bottom # Place the comment box above/below the comments. e.g. top, bottom
-      loading: lazy # Load the comments lazily
-    # Artalk comment system. See https://artalk.js.org/
-    artalk:
-      server: # Artalk server URL. e.g. https://artalk.example.com
-      site: # Site name shown in Artalk admin (should match server-side site config)
-    # Utterances comment system. See https://utteranc.es/
-    utterances:
-      repo: # GitHub repository name e.g. owner/repo (Issues must be enabled)
-      issue_term: pathname # pathname, url, title, og:title (recommended: pathname for single-page mode)
-      issue_number: # Use a specific issue number instead of issue_term
-      label: # Optional label for created issues
-      theme_light: github-light # Light theme
-      theme_dark: github-dark # Dark theme
-# COMMENT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
-
-
 # FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # Docs: https://redefine-docs.ohevan.com/footer
 footer:
@@ -451,26 +405,21 @@ inject:
 plugins:
   # RSS feed. Requires hexo-generator-feed (npm i hexo-generator-feed). See https://github.com/hexojs/hexo-generator-feed
   feed:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
   # Aplayer. See https://github.com/DIYgod/APlayer
   aplayer:
-    enable: false # Whether to enable
+    enable: true # Whether to enable
     type: fixed # fixed, mini
     audios:
-      - name: # audio name
-        artist: # audio artist
-        url: # audio url
-        cover: # audio cover url
+      - name: DEMMO # audio name
+        artist: music collections # audio artist
+        url: https://mp3tourl.com/audio/1775046822921-52a4fcd6-ebf2-4b0f-b793-cefaa7f73092.mp3 # audio url
+        cover: https://i.postimg.cc/1zSp5HXC/DEMMO.jpg # audio cover
         lrc: # audio cover lrc
-#      - name: # audio name
-#        artist: # audio artist
-#        url: # audio url
-#        cover: # audio cover url
-#        lrc: # audio cover lrc
       # .... you can add more audios here
   # Mermaid JS. Requires hexo-filter-mermaid-diagrams (npm i hexo-filter-mermaid-diagrams). See https://mermaid.js.org/
   mermaid:
-    enable: false # enable mermaid or not
+    enable: true # enable mermaid or not
     version: "11.4.1" # default v11.4.1
     theme:
       light: "default"
@@ -484,7 +433,7 @@ page_templates:
   # Friend Links page column number
   friends_column: 2
   # Tags page style
-  tags_style: blur # blur, cloud
+  tags_style: cloud # blur, cloud
   # Masonry page batch size
   masonry:
     batch_size: 12
@@ -511,3 +460,21 @@ developer:
   # Whether to enable developer mode (only for developers who want to modify the theme source code, not for ordinary users)
   enable: false
 # DEVELOPER MODE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+# 注意！最左邊不要有空格，跟 navbar 齊平
+comment:
+  enable: true
+  system: giscus
+  config:         # <--- 必須多加這一層
+    giscus:       # <--- 縮排要對齊
+      repo: fyc970823/transmit
+      repo_id: R_kgDORlSv8w
+      category: Announcements
+      category_id: DIC_kwDORlSv884C4UTw
+      mapping: pathname
+      strict: '0'
+      reactions_enabled: '1'
+      emit_metadata: '0'
+      input_position: bottom
+      theme: preferred_color_scheme
+      lang: zh-TW
