@@ -467,7 +467,7 @@ comment:
   system: giscus
   config:         # <--- 必須多加這一層
     giscus:       # <--- 縮排要對齊
-      repo: fyc970823/transmit
+      repo: fyc970823/main
       repo_id: R_kgDORlSv8w
       category: Announcements
       category_id: DIC_kwDORlSv884C4UTw
